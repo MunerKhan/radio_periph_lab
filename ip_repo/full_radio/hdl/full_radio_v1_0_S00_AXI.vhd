@@ -503,7 +503,7 @@ tuningDDS : dds_compiler_2
     aclk => s_axi_aclk,
     s_axis_data_tvalid => fakeDDS_tvalid,
     s_axis_data_tready => open,
-    s_axis_data_tdata => fakeDDS_out,--fir0_input,
+    s_axis_data_tdata => fir0_input, --fir0_input,
     m_axis_data_tvalid => fir0_out_tvalid,
     m_axis_data_tdata => fir0_out -- FIR 0 output input to FIR 1 
   );
